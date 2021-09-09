@@ -57,7 +57,6 @@ namespace Week7.EquazioneGrado2.WinForms
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(89, 31);
             this.txtA.TabIndex = 0;
-            this.txtA.TextChanged += new System.EventHandler(this.txtA_TextChanged);
             // 
             // txtB
             // 
@@ -65,7 +64,6 @@ namespace Week7.EquazioneGrado2.WinForms
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(89, 31);
             this.txtB.TabIndex = 1;
-            this.txtB.TextChanged += new System.EventHandler(this.txtB_TextChanged);
             // 
             // txtDelta
             // 
@@ -81,7 +79,6 @@ namespace Week7.EquazioneGrado2.WinForms
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(89, 31);
             this.txtC.TabIndex = 3;
-            this.txtC.TextChanged += new System.EventHandler(this.txtC_TextChanged);
             // 
             // txtX1
             // 
@@ -199,6 +196,7 @@ namespace Week7.EquazioneGrado2.WinForms
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(31, 31);
             this.textBox3.TabIndex = 18;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 

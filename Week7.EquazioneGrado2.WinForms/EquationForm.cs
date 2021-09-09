@@ -21,31 +21,31 @@ namespace Week7.EquazioneGrado2.WinForms
             InitializeComponent();
         }
 
-        private void txtB_TextChanged(object sender, EventArgs e)
-        {
-            b = double.Parse(txtB.Text);
-            if (b > 0)
-            {
-                textBox3.Text = $"+{b}";
-            }
-            else
-            {
-                textBox3.Text = $"-{b}";
-            }
-        }
+        //private void txtB_TextChanged(object sender, EventArgs e)
+        //{
+        //    b = double.Parse(txtB.Text);
+        //    if (b > 0)
+        //    {
+        //        textBox3.Text = $"+{b}";
+        //    }
+        //    else
+        //    {
+        //        textBox3.Text = $"-{b}";
+        //    }
+        //}
 
-        private void txtC_TextChanged(object sender, EventArgs e)
-        {
-            c = double.Parse(txtC.Text);
-            if (c > 0)
-            {
-                textBox2.Text = $"+{c}";
-            }
-            else
-            {
-                textBox2.Text = $"-{c}";
-            }
-        }
+        //private void txtC_TextChanged(object sender, EventArgs e)
+        //{
+        //    c = double.Parse(txtC.Text);
+        //    if (c > 0)
+        //    {
+        //        textBox2.Text = $"+{c}";
+        //    }
+        //    else
+        //    {
+        //        textBox2.Text = $"{c}";
+        //    }
+        //}
 
         private void txtDelta_TextChanged(object sender, EventArgs e)
         {
@@ -57,11 +57,13 @@ namespace Week7.EquazioneGrado2.WinForms
 
         }
 
+      
+
         private void btnC_Click(object sender, EventArgs e)
         {
-            //txtA.Clear();
-            //txtB.Clear();
-            //txtC.Clear();
+            txtA.Clear();
+            txtB.Clear();
+            txtC.Clear();
             txtX1.Clear();
             txtX2.Clear();
             txtDelta.Clear();
@@ -73,6 +75,30 @@ namespace Week7.EquazioneGrado2.WinForms
 
         private void btnUguale_Click(object sender, EventArgs e)
         {
+            a = double.Parse(txtA.Text);
+            textBox1.Text = $"{a}";
+
+            b = double.Parse(txtB.Text);
+            if (b > 0)
+            {
+                textBox3.Text = $"+{b}";
+            }
+            else
+            {
+                textBox3.Text = $"{b}";
+            }
+
+
+            c = double.Parse(txtC.Text);
+            if (c > 0)
+            {
+                textBox2.Text = $"+{c}";
+            }
+            else
+            {
+                textBox2.Text = $"{c}";
+            }
+
             var risultato = equation.RisolviEquazioneSecondoGrado(a, b, c);
             if (risultato == null)
             {
@@ -106,12 +132,12 @@ namespace Week7.EquazioneGrado2.WinForms
         }
     
 
-        private void txtA_TextChanged(object sender, EventArgs e)
-        {
-            a = double.Parse(txtA.Text);
-            textBox1.Text = $"{a}";
+        //private void txtA_TextChanged(object sender, EventArgs e)
+        //{
+        //    a = double.Parse(txtA.Text);
+        //    textBox1.Text = $"{a}";
 
-        }
+        //}
 
         private void SetEquation(string contentValueA, string contentValueB, string contentValueC, string operationToDo)
         {
