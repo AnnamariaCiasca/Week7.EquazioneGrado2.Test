@@ -196,7 +196,7 @@ namespace Week7.EquazioneGrado2.WinForms
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(31, 31);
             this.textBox3.TabIndex = 18;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            //this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
