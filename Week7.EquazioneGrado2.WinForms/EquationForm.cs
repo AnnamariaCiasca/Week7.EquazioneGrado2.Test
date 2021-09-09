@@ -57,7 +57,10 @@ namespace Week7.EquazioneGrado2.WinForms
 
         }
 
-      
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void btnC_Click(object sender, EventArgs e)
         {

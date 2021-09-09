@@ -49,6 +49,7 @@ namespace Week7.EquazioneGrado2.WinForms
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.btnC = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtA
@@ -97,7 +98,7 @@ namespace Week7.EquazioneGrado2.WinForms
             // x2
             // 
             this.x2.AutoSize = true;
-            this.x2.Location = new System.Drawing.Point(117, 201);
+            this.x2.Location = new System.Drawing.Point(117, 198);
             this.x2.Name = "x2";
             this.x2.Size = new System.Drawing.Size(42, 25);
             this.x2.TabIndex = 6;
@@ -196,7 +197,6 @@ namespace Week7.EquazioneGrado2.WinForms
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(31, 31);
             this.textBox3.TabIndex = 18;
-            //this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -217,11 +217,22 @@ namespace Week7.EquazioneGrado2.WinForms
             this.btnC.UseVisualStyleBackColor = true;
             this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(265, 198);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(39, 25);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "= 0";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // EquationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 544);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -271,6 +282,7 @@ namespace Week7.EquazioneGrado2.WinForms
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button btnC;
+        private System.Windows.Forms.Label label1;
     }
 }
 
